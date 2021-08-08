@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Developer Life </title>
+		<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+		<style>
+			body {
+				height: 50%;
+				overflow-x: hidden;
+				background-repeat: no-repeat;
+				background-color: rgb(201, 76, 76);
+				background-size: cover;
+				background-position: center;
+			}
+			button {
+				
+				background-color: #f3f7f3; 
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 25px;
+				cursor: pointer;
+			}
+			.shItems {
+				margin-left: 42.125%;
+				margin-top: 10px;
+				border: 3px solid;
+			}
+			.shItems:hover {
+				animation: hovAnim 0.25s linear forwards;
+			}
+
+			.shItems:left {
+				animation: hovAnim 0.25s linear backwards;
+			}
+
+			@keyframes hovAnim {
+				100% {
+					border-color:rgb(91, 98, 158);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div style="border-radius:25px;background-color:rgba(255, 255, 255, 0.74);border: 4px inset rgb(158, 91, 91);">
+			<h2 align="center" id="title" style="font-family:Raleway;">Dev Tycoon</h2>
+		</div>
+		<button class="shItems" onclick="CreatePage(1)"><img src="computerdefLogo.png" width="100%" height=100px;></button>
+		<h1 style="font-family:Raleway;" align="center">Upgrade Computer</h1>
+		<button class="shItems" style="margin-left:44%" onclick="CreatePage(2)"><img src="cnew.png" width="100%" height=100px;></button>
+		<h1 style="font-family:Raleway;" align="center">New Project</h1>
+		<button style="position:absolute;margin-top:10%;margin-left:44%;font-family:Raleway;background-color:rgb(0,255,0)" onclick="NextTurn()">Next Turn</button>
+		<script src="mrun.js"></script>
+	</body>
+</html>

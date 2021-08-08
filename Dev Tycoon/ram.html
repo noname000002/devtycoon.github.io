@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <title>Dev Tycoon</title>
+        <style>
+            body {
+				height: 50%;
+				overflow-x: hidden;
+				background-repeat: no-repeat;
+				background-color: rgb(201, 76, 76);
+				background-size: cover;
+				background-position: center;
+			}
+            button {
+				
+				
+				border: none;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				font-size: 16px;
+				border-radius: 25px;
+				cursor: pointer;
+            }
+			.shItems {
+				margin-left: 44.25%;
+				margin-top: 10px;
+				border: 3px solid;
+			}
+			.shItems:hover {
+				animation: hovAnim 0.25s linear forwards;
+			}
+
+			.shItems:left {
+				animation: hovAnim 0.25s linear backwards;
+			}
+
+			@keyframes hovAnim {
+				100% {
+					border-color:rgb(91, 98, 158);
+				}
+			}
+        </style>
+    </head>
+    <body>
+        <div style="border-radius:25px;background-color:rgba(255, 255, 255, 0.74);border: 4px inset rgb(158, 91, 91);">
+			<h2 align="center" id="title" style="font-family:Raleway;">RAM</h2>
+		</div>
+		
+		<h1 style="font-family:Raleway;" align="center">Axis Platinum 8GB</h1>
+		<button style="position:absolute;margin-top:1%;margin-left:46.5%;font-family:Raleway;background-color: #40b808;" id="axplb8" onclick="Transact(200, 'axplb8');SetComponent('Memory', 'axplb8');">Buy</button>
+		<h1 style="font-family:Raleway;margin-top:140px;" align="center">Axis 16GB</h1>
+		<button style="position:absolute;margin-top:1%;margin-left:46.5%;font-family:Raleway;background-color: #40b808;" id="ax16r" onclick="Transact(1100, 'ax16r');SetComponent('Memory', 'ax16r');">Buy</button>
+        <button style="position:absolute;margin-top:23%;margin-left:43%;font-family:Raleway;background-color: #fa0a0a;" onclick="CreatePage(0)">Return to Main Page</button>
+        
+		<script src="mrun.js"></script>
+  
+    </body>
+</html>
